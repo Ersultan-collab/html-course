@@ -63,8 +63,9 @@ print("Python" in variable)
 # String Replacement:
 # Replace the word 'Python' in the topic string with 'programming' and print the modified string.
 
-# variable = "strings in Python."
-# print(variable.("Python" "programming"))
+variable = "strings in Python."
+print(variable.replace('Python', 'programming'))
+
 
 # String Splitting:
 # Split the string 'Python,Java,C++,Ruby' into a list of programming languages using a comma as the separator.
@@ -76,19 +77,36 @@ print(programming)
 # Character at Index:
 # Find and print the character at index 4 in the topic string.
 
+upper_topic = "topic"
+print(upper_topic[4])
+
 # String Repetition:
 # Create a new string that repeats the word 'Python' three times, separated by hyphens.
+
+new_string = 'Python Python Python'
+string = " - ".join(new_string.split())
+print(string)
+
 
 # Escape Symbols in String:
 # Create a string that contains a newline character to print the following text on separate lines:
 # Hello,
 # World!
 
+my_string = "Hello,\nWorld!"
+print(my_string)
+
 # String Capitalization:
 # Capitalize the first letter of each word in the string 'python programming is amazing.'
 
+original_string = 'python programming is amazing.'
+print(original_string.title())
+
 # String Removal and Trimming:
 # Remove any leading or trailing whitespace from the string '  Python For All ' and print the trimmed result.
+
+original_string = '  Python For All '
+print(original_string.strip())
 
 
 
@@ -156,21 +174,56 @@ print(programming_languages)
 # List Copy:
 # Create a new list languages_copy by copying the elements from the programming_languages list. Modify one element in the original list and ensure that the copy remains unchanged.
 
+programming_languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby']
+languages_copy = programming_languages.copy()
+programming_languages.pop(2)
+print("Original list:", programming_languages)
+print("Copied list:", languages_copy)
+
 # List Slicing:
 # Use slicing to create a new list first_two containing the first two elements from the programming_languages list.
+
+programming_languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby']
+first_two = programming_languages[:2]
+print(first_two)
+
 
 # List Concatenation:
 # Create a new list by concatenating the programming_languages list with another list containing ['Swift', 'Kotlin']. Print the resulting list.
 
+programming_languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby']
+additional_languages = ['Swift', 'Kotlin']
+
+programming_languages.extend(additional_languages)
+print(programming_languages)
+
+
 # List Sorting:
 # Sort the elements in the programming_languages list in reverse alphabetical order (descending) and print the sorted list.
+
+programming_languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby']
+programming_languages.sort(reverse=True)
+print(programming_languages)
 
 # List Removal by Value:
 # Remove all occurrences of 'JavaScript' from the programming_languages list and print the modified list.
 
+programming_languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby', 'JavaScript']
+
+programming_languages.remove('JavaScript')
+
+print(programming_languages)
+
+
 # List Element Extraction:
 # Use the pop() method to extract and print the last element of the programming_languages list, and then print the updated list without that element.
+
+programming_languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby', 'JavaScript']
+programming_languages.pop(5)
+print(programming_languages)
 
 # List Element Counting:
 # Count and print the total number of elements in the programming_languages list.
 
+programming_languages = ['Python', 'Java', 'C++', 'JavaScript', 'Ruby', 'JavaScript']
+print(len(programming_languages))
